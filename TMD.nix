@@ -16,16 +16,16 @@ in
   && baseNameOf path != "data/*") ./.;
 
   buildInputs = [
-    python27Full
-    python27Packages.numpy
-    python27Packages.scipy
-    python27Packages.enum34
-    python27Packages.scikit-learn
-    python27Packages.munkres
+    python38Packages.numpy
+    python38Packages.scipy
+    python38Packages.enum34
+    python38Packages.scikit-learn
+    python38Packages.munkres
+    python38Packages.cached-property
 
     # optional dependencies
-    python27Packages.h5py
-    python27Packages.matplotlib
+    python38Packages.h5py
+    python38Packages.matplotlib
   ];
 
 }
